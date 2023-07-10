@@ -1,0 +1,71 @@
+/*Font family importation*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+/*Stlye section for Navigation bar*/
+body {
+  background-color: #000;
+}
+
+.navigation-bar {
+  top: 0;
+}
+
+/* Style for introduction section*/
+
+.introduction-row,
+.introduction-row-backgrund {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.introduction-row-backgrund {
+  flex-direction: column;
+}
+
+.column-introduction {
+  align-items: center;
+  display: flex;
+  justify-content: justify;
+  flex-direction: column;
+  gap: 0.5;
+}
+
+.auto-type {
+  color: #0074d3;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.column-introduction-ph {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nando-profile {
+  border-bottom: 2px solid;
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.8));
+}
+
+.paragrah-introduction {
+  font-size: 2rem;
+}
+
+.download-cv button {
+    background-color: #0074d3;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
+}
+
+.download-cv button:hover {
+    background-color: #5da2da;
+    color: #202020;
+}
