@@ -1,26 +1,33 @@
 /*Font family importation*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 
-/*Stlye section for Navigation bar*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
 }
 
+/*Stlye section for Navigation bar*/
+
 .navigation-bar {
+  position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 /* Style for introduction section*/
 
 .introduction-row,
-.introduction-row-backgrund {
+.introduction-row-background {
   align-items: center;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.introduction-row-backgrund {
+.introduction-row-background {
   flex-direction: column;
 }
 
@@ -30,6 +37,7 @@ body {
   justify-content: justify;
   flex-direction: column;
   gap: 0.5;
+  margin-top: 40px;
 }
 
 .auto-type {
@@ -43,11 +51,12 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .nando-profile {
   border-bottom: 2px solid;
-  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.8));
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
 }
 
 .paragrah-introduction {
@@ -55,17 +64,110 @@ body {
 }
 
 .download-cv button {
-    background-color: #0074d3;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
+  background-color: #0074d3;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
 }
 
 .download-cv button:hover {
-    background-color: #5da2da;
-    color: #202020;
+  background-color: #5da2da;
+  color: #202020;
+}
+
+/*Styles for experience and education */
+.edu-col-icon {
+  height: auto;
+  width: 55px;
+}
+
+.exp-edu-row {
+  padding-top: 40px;
+}
+
+.education-col,
+.experience-col {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.time-line {
+  position: relative;
+  width: 500px;
+  max-width: 95vw;
+  height: 100%;
+  font-family: Arial;
+}
+.moment {
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+}
+.moment:nth-child(even) {
+  left: 55%;
+}
+
+.time-line::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.moment::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.moment:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
+
+.moment h3 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+.moment .description {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 22px;
+  font-size: 14px;
+}
+.moment .description::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 10px);
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #eee;
+}
+.moment:nth-child(even) .description {
+  background-color: #0074d3;
+  color: white;
+}
+.moment:nth-child(even) .description::after {
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #0074d3;
+  border-left: none;
 }

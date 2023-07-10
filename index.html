@@ -11,35 +11,36 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/indexStyle.css" />
+    <link rel="icon" href="/icons/maletin.webp" alt="maletin-icon" />
   </head>
   <body>
     <main>
-      <nav class="navigation-bar bg-dark">
+      <nav class="navigation-bar bg-light">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active text-light" href="">Bio</a>
+            <a class="nav-link active text-dark" href="#bio-section">Bio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="">Experience</a>
+            <a class="nav-link active text-dark" href="#experience-section">Background</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="">Education</a>
+            <a class="nav-link active text-dark" href="#projects-section">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="">Contact me</a>
+            <a class="nav-link active text-dark" href="#contact-section">Contact me</a>
           </li>
         </ul>
       </nav>
 
       <div class="container-fluid">
-        <div class="row bg-secondary introduction-row">
-          <div class="col-sm mt-4 column-introduction">
+        <div class="row bg-secondary introduction-row" id="bio-section">
+          <div class="col-sm  column-introduction">
             <h2 class="text-white text-center">
-              Hi there! I am <br />
+              Hi there!&#x1F4BB; &#x1F44B; I am <br />
               <span class="auto-type"></span>
             </h2>
           </div>
-          <div class="col-sm mt-4 column-introduction-ph">
+          <div class="col-sm  column-introduction-ph">
             <img
               src="../images/Nando.webp"
               alt="nando-pic"
@@ -47,19 +48,119 @@
             />
           </div>
         </div>
-        <div class="row bg-dark text-light introduction-row-backgrund">
-          <p class="mt-4 paragrah-introduction">
+        <div class="row bg-dark text-light introduction-row-background">
+          <p class=" paragrah-introduction mt-2">
             I am so happy to find you here reading this. <br />
-            I wanted to create a space where I can show you all my potential <br />
-            and all my future personal projects for you to easily find what I'm <br />
+            I wanted to create a space where I can show you all my potential
+            <br />
+            and all my future personal projects for you to easily find what I'm
+            <br />
             working on. Take your time to check everything!
           </p>
           <span class="mb-4 paragrah-introduction">
-            Down below you can check my CV, for now is just in Spanish but later on will be available in English.
+            Down below you can check my CV, for now is just in Spanish but later
+            on will be available in English.
           </span>
-          <a class="mb-4 download-cv" href="../Curriculum - Hernando Lopez.pdf" download>
+          <a
+            class="mb-4 download-cv"
+            href="../Curriculum - Hernando Lopez.pdf"
+            download
+          >
             <button>Download</button>
           </a>
+        </div>
+        <div class="row exp-edu-row bg-secondary" id="experience-section">
+          <div class="col experience-col mb-4">
+            <h1>Work experience <img class="edu-col-icon" rel="icon" src="/icons/trabajador.webp" alt="trabajador-icon" /></h1>
+            <div class="time-line">
+              <div class="moment">
+                <h3>2018-2019</h3>
+                <div class="description">
+                  <p>Pansfood Company</p>
+                  <ul>
+                    <li>Taking customers orders.</li>
+                    <li>Cleaning common areas for customers.</li>
+                    <li>Managing customers request and organized inventory.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2019-2021</h3>
+                <div class="description">
+                  <p>Sitel - Foundever</p>
+                  <ul>
+                    <li>Inbound calls customer service agent.</li>
+                    <li>Handling customers request, profiling and checking for elegibility for financial products.</li>
+                    <li>Follow up on current loan applications.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2021-2022</h3>
+                <div class="description">
+                  <p>Sitel - Foundever</p>
+                  <ul>
+                    <li>Team leader.</li>
+                    <li>Handling 15-20 people team, guiding them to meet goals and expectations.</li>
+                    <li>Providing support, training, feedback and daily meetings with team agents to improve metrics.</li>
+                    <li>Daily, weekly, monthly and quarterly meetings with client and managers.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2022-2023</h3>
+                <div class="description">
+                  <p>Teleperformance</p>
+                  <ul>
+                    <li>Interpreter</li>
+                    <li>Provide accurate and reliable interpretation services between healthcare providers and patients who have limited proficiency in the language used by the healthcare provider.</li>
+                    <li>Ensure that patients have a comprehensive understanding of their medical situation.</li>
+                    <li>Facilitate culturally sensitive communication between healthcare providers and patients, considering their cultural background, beliefs, and practices.</li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col education-col mb-4">
+            <h1>Education <img class="edu-col-icon" rel="icon" src="/icons/graduado.webp" alt="graduado-icon" /></h1>
+            <div class="time-line">
+              <div class="moment">
+                <h3>2012-2017</h3>
+                <div class="description">
+                  <p>I. E. El Diamante</p>
+                  <ul>
+                    <li>High School diploma</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2016-2017</h3>
+                <div class="description">
+                  <p>Servicio Nacional De Aprendizaje (SENA)</p>
+                  <ul>
+                    <li>Técnico en Sistemas (Systems Technician)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2016-2017</h3>
+                <div class="description">
+                  <p>Servicio Nacional De Aprendizaje (SENA)</p>
+                  <ul>
+                    <li>Course on basic management of office tools</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moment">
+                <h3>2020-Actual.</h3>
+                <div class="description">
+                  <p>Universidad del Valle</p>
+                  <ul>
+                    <li>Systems Engineering</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
