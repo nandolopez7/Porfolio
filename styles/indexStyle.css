@@ -221,6 +221,11 @@ body {
 .card {
   height: 30rem;
   width: 18rem;
+  transition: 0.5s ease-in-out transform;
+}
+
+.card:hover {
+  transform: scale(1.025);
 }
 
 .ph-card {
