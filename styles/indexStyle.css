@@ -256,3 +256,56 @@ body {
   height: auto;
   width: 55px;
 }
+
+.contact-form {
+  background-color: rgba(87, 87, 87, 0.5);
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(163, 163, 163, 0.5);
+  padding: 1.3rem;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+.social-net {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  color: #fff;
+  height: 70px;
+  transition: 0.5s ease-in-out color, 0.5s ease-in-out background-color;
+  width: 70px;
+}
+
+.social-icon.in:hover {
+  background-color: #e9e9e9;
+  color: #0861b9;
+}
+
+.social-icon.gt:hover {
+  background-color: #858585;
+  color: #191919;
+}
+
+.social-icon.tw:hover {
+  background-color: #e9e9e9;
+  color: #1c92e5;
+}
