@@ -309,3 +309,13 @@ body {
   background-color: #e9e9e9;
   color: #1c92e5;
 }
+
+/*Style footer section*/
+
+.footer {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

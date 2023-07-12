@@ -12,6 +12,14 @@
     />
     <link rel="stylesheet" href="../styles/indexStyle.css" />
     <link rel="icon" href="/icons/maletin.webp" alt="maletin-icon" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("VHgueen66dMjBypIQ");
+    </script>
   </head>
   <body>
     <main>
@@ -353,39 +361,55 @@
               contact me!
             </p>
 
-            <form class="contact-form" action="">
+            <form class="contact-form" id="form">
               <div class="mb-3">
-                <label for="nameInput" class="form-label">Full name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nameInput"
-                  placeholder="John Doe"
-                />
+                <div class="field">
+                  <label for="from_name" class="form-label">Full name</label>
+                  <input
+                    require
+                    type="text"
+                    name="from_name"
+                    id="from_name"
+                    class="form-control"
+                    placeholder="John Doe"
+                  />
+                </div>
               </div>
 
               <div class="mb-3">
-                <label for="emailInput" class="form-label">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailInput"
-                  placeholder="name@example.com"
-                />
+                <div class="field">
+                  <label for="email_id" class="form-label">Email address</label>
+                  <input
+                    require
+                    type="email"
+                    name="email_id"
+                    id="email_id"
+                    class="form-control"
+                    placeholder="name@example.com"
+                  />
+                </div>
               </div>
 
               <div class="mb-3">
-                <label for="messageInput" class="form-label"
-                  >Your message:</label
-                >
-                <textarea
-                  class="form-control"
-                  id="messageInput"
-                  rows="5"
-                ></textarea>
+                <div class="field">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
               </div>
 
-              <button type="button" class="btn btn-primary">Send</button>
+              <input
+                class="btn btn-primary"
+                type="submit"
+                id="button"
+                value="Send Email"
+              />
             </form>
 
             <div class="social-net">
@@ -445,6 +469,13 @@
             </div>
           </div>
         </section>
+        <footer>
+          <div class="footer">
+            <span>@Copyrigh - 2023</span>
+            <span>All rights reserved</span>
+            <span>This website was developed by Hernando Lopez</span>
+          </div>
+        </footer>
       </div>
     </main>
 
@@ -463,5 +494,6 @@
         loop: true,
       });
     </script>
+    <script src="./app.js" />
   </body>
 </html>
