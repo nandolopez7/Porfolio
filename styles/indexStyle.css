@@ -76,6 +76,11 @@ body {
   transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
 }
 
+.idiom-icon {
+  height: 50px;
+  width: auto;
+}
+
 .download-cv button:hover {
   background-color: #5da2da;
   color: #202020;
